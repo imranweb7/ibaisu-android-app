@@ -5,4 +5,31 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+
+    <string name="university_name">IBAIS UNIVERSITY</string>
+    <string name="university_email">info@ibaisuniv.edu.bd</string>
+
+    <string name="nav_drawer_text_contact">Connect Us</string>
+    <string name="nav_drawer_text_hotline">+88-017-33-718-377</string>
+    <string name="nav_drawer_text_email">info@ibaisuniv.edu.bd</string>
+    <string name="nav_drawer_text_facebook">+/ibaisuniv.edu.bd</string>
+    <string name="nav_drawer_text_website">http://www.ibaisuniv.edu.bd/</string>
+
+    <string name="nav_drawer_home">HOME</string>
+    <string name="nav_drawer_about">ABOUT</string>
+    <string name="nav_drawer_admission">ADMISSION</string>
+    <string name="nav_drawer_notice_board">NOTICE BOARD</string>
+    <string name="nav_drawer_contact">CONTACT</string>
+
+
+    <!-- HOME MENU -->
+    <string name="nav_home_about">About IBAISU</string>
+    <string name="nav_home_why_study_here">Why Study Here</string>
+    <string name="nav_home_our_resources">Our Resources</string>
+
+    <!-- ABOUT MENU -->
+    <string name="nav_about_board_of_trustees">Board of Trustees</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

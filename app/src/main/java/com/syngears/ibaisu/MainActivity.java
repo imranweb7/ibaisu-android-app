@@ -1,5 +1,8 @@
 package com.syngears.ibaisu;
 
+import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -20,6 +23,7 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -80,22 +84,36 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        Fragment fragment = null;
 
-        } else if (id == R.id.nav_slideshow) {
+        if (id == R.id.nav_drawer_home) {
+            fragment = new DrawerHomeFragment();
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_drawer_about) {
+            fragment = new DrawerAboutFragment();
 
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.nav_drawer_admission) {
+            fragment = new DrawerAdmissionFragment();
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_drawer_notice_board) {
+            fragment = new DrawerNoticeFragment();
 
+        } else if (id == R.id.nav_drawer_contact) {
+            fragment = new DrawerContactFragment();
         }
+
+        openFragment(fragment);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    private void openFragment(Fragment fragment){
+        FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager
+                .beginTransaction();
+        fragmentTransaction.replace(R.id.fragment_container, fragment);
+        fragmentTransaction.commit();
     }
 }
