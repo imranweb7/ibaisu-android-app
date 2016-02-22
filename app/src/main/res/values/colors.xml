@@ -4,6 +4,8 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
+    <color name="colorTabPrimary">#2B496D</color>
+
     <!-- Content Main Button Color -->
     <color name="contentButtonTextColor">#FFFFFF</color>
     <color name="contentButtonShadowColor">#2B496D</color>
