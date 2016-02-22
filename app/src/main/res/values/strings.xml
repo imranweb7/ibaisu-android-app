@@ -21,11 +21,21 @@
     <string name="nav_drawer_notice_board">NOTICE BOARD</string>
     <string name="nav_drawer_contact">CONTACT</string>
 
+    <!-- HOME TAB MENU ITEM -->
+    <string name="nav_home_tab_home">HOME</string>
+    <string name="nav_home_tab_message">MESSAGES</string>
 
-    <!-- HOME MENU -->
-    <string name="nav_home_about">About IBAISU</string>
-    <string name="nav_home_why_study_here">Why Study Here</string>
-    <string name="nav_home_our_resources">Our Resources</string>
+
+    <!-- HOME TAB HOME CONTENT MENU -->
+    <string name="nav_home_tab_home_about">About IBAISU</string>
+    <string name="nav_home_tab_home_why_study_here">Why Study Here</string>
+    <string name="nav_home_tab_home_our_resources">Our Resources</string>
+
+    <!-- HOME TAB MESSAGE CONTENT MENU -->
+    <string name="nav_home_tab_message_from_chairman">Messages From Chairman</string>
+    <string name="nav_home_tab_message_from_vice_chairman">Messages From Vice Chairman</string>
+    <string name="nav_home_tab_message_from_vc">Messages From VC</string>
+
 
     <!-- ABOUT MENU -->
     <string name="nav_about_board_of_trustees">Board of Trustees</string>

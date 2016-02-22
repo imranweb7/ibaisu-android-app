@@ -4,7 +4,7 @@
         <item name="android:minWidth">@dimen/content_button_min_width</item>
         <item name="android:minHeight">@dimen/content_button_min_height</item>
         <item name="android:textColor">@color/contentButtonTextColor</item>
-        <item name="android:textSize">20sp</item>
+        <item name="android:textSize">16sp</item>
         <item name="android:shadowColor">@color/contentButtonShadowColor</item>
         <item name="android:layout_marginBottom">@dimen/content_button_margin_bottom</item>
     </style>

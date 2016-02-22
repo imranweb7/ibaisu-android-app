@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/fragment_vertical_margin"
+    android:paddingBottom="@dimen/fragment_vertical_margin"
+    android:paddingLeft="@dimen/fragment_horizontal_margin"
+    android:paddingRight="@dimen/fragment_horizontal_margin">
+
+    <Button
+        android:id="@+id/nav_home_tab_home_about"
+        android:text="@string/nav_home_tab_home_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/ContentMainButton"
+        android:background="@drawable/buttonshape"
+        />
+
+    <Button
+        android:id="@+id/nav_home_tab_home_why_study_here"
+        android:text="@string/nav_home_tab_home_why_study_here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/ContentMainButton"
+        android:background="@drawable/buttonshape"
+        />
+
+    <Button
+        android:id="@+id/nav_home_tab_home_our_resources"
+        android:text="@string/nav_home_tab_home_our_resources"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/ContentMainButton"
+        android:background="@drawable/buttonshape"
+        />
+
+</LinearLayout>

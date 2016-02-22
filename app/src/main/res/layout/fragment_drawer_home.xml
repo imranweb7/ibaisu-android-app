@@ -1,38 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:gravity="center_horizontal"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <Button
-        android:id="@+id/nav_home_about"
-        android:text="@string/nav_home_about"
-        android:layout_width="wrap_content"
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/ContentMainButton"
-        android:background="@drawable/buttonshape"
-        android:onClick="showNavHomeAbout"
-        />
+        android:layout_below="@+id/toolbar"
+        android:background="@color/colorTabPrimary"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"
+        app:tabTextAppearance="@style/CustomTabText"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
 
-    <Button
-        android:id="@+id/nav_home_why_study_here"
-        android:text="@string/nav_home_why_study_here"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/ContentMainButton"
-        android:background="@drawable/buttonshape"
-        android:onClick="showNavHomeWhyStudyHere"
-        />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/tab_layout"/>
 
-    <Button
-        android:id="@+id/nav_home_our_resources"
-        android:text="@string/nav_home_our_resources"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/ContentMainButton"
-        android:background="@drawable/buttonshape"
-        android:onClick="showNavHomeOurResources"
-        />
-
-</LinearLayout>
+</RelativeLayout>
